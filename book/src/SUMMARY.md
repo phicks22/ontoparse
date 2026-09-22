@@ -1,6 +1,5 @@
 # Summary
 
-[Introduction](introduction.md)
-
-- [INSTALL](./install.md)
-- [CLI](./cli.md)
+- [Introduction](introduction.md)
+- [Install](./install.md)
+- [User guide](./user-guide.md)

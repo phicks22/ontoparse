@@ -1,6 +1,11 @@
 # ontoparse
 
-Utils for working with ontology files.
+A command line suite for working with ontology files.
+
+## Features
+
+- Parse ontology OBO files
+- Extract ontology cross references
 
 ## Documentation
 

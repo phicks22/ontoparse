@@ -5,7 +5,7 @@ language = "en"
 src = "src"
 
 [output.html]
-git-repository-url = "https://github.com/phicks22/ontoparse"
+git-repository-url = "https://codeberg.org/phicks-it/ontoparse"
 search.use-boolean-and = true
 default-theme = "ayu"
 preferred-dark-theme = "ayu"

@@ -20,7 +20,7 @@ ontoparse xref <FILE> --to <PREFIX> [--from <PREFIX>] [--separator <SEP>]
   - `--from <PREFIX>`: An anchor prefix to map from (e.g., `UBERON`). Must contain term entries in the file. Defaults to the most frequent prefix in the file.
   - `--separator <SEP>`: Delimiter of the output table. Defaults to `\t`.
 
-### Example
+### Examples
 
 From the primary prefix (i.e., UBERON):
 
