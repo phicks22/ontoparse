@@ -1,0 +1,15 @@
+[package]
+name = "ontoparse-load"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ontoparse-core = { path = "../ontoparse-core" }
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
