@@ -2,7 +2,7 @@
 
 ## xrefs
 
-Extract cross-references (xrefs) from ontologies.
+Extract cross-references (xrefs) from ontologies. Currenly supports OBO format-version 1.2.
 
 ```bash
 ontoparse xref <FILE> --to <PREFIX> [--from <PREFIX>] [--separator <SEP>]
@@ -10,7 +10,7 @@ ontoparse xref <FILE> --to <PREFIX> [--from <PREFIX>] [--separator <SEP>]
 
 - **Arguments**
 
-  - `<FILE>`: An ontology OBO file in release format >1.2 or <1.4.
+  - `<FILE>`: An ontology OBO file.
 
 - **Required options**
 
@@ -31,13 +31,13 @@ ontoparse xref uberon.obo --to MESH
 Or you can specify:
 
 ```bash
-ontoparse xref uberon.obo --from UBERON --to MESH
+ontoparse xref uberon.obo --to MESH --from UBERON
 ```
 
 You can also map from other prefixes if they exist:
 
 ```bash
-ontoparse xref uberon.obo --from CL --to MESH
+ontoparse xref uberon.obo --to MESH --from CL
 ```
 
 Write the output to tsv:
