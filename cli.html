@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -33,9 +33,9 @@
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "";
-            const default_light_theme = "light";
-            const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-460d3e9d.js";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "searchindex-4bb6124a.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-16134cd9.js"></script>
@@ -76,7 +76,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('light')
+            html.classList.remove('ayu')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -180,17 +180,29 @@
                         <h1 id="the-ontoparse-cli"><a class="header" href="#the-ontoparse-cli">The ontoparse CLI</a></h1>
 <h2 id="xrefs"><a class="header" href="#xrefs">xrefs</a></h2>
 <p>Extract cross-references (xrefs) from ontologies.</p>
+<pre><code class="language-bash">ontoparse xref &lt;FILE&gt; --to &lt;PREFIX&gt; [--from &lt;PREFIX&gt;] [--separator &lt;SEP&gt;]
+</code></pre>
 <ul>
-<li>Arguments
+<li>
+<p><strong>Arguments</strong></p>
 <ul>
-<li><code>to</code>: An anchor prefix to map from (e.g, <code>MESH</code>).</li>
-<li><code>from</code>: An anchor prefix to map from (e.g., <code>UBERON</code>). Must contain term entries in the file. Defaults to the most frequent prefix in the file.</li>
-<li><code>separator</code>: Delimiter of the output table. Default is <code>\t</code>.</li>
+<li><code>&lt;FILE&gt;</code>: An ontology OBO file in release format &gt;1.2 or &lt;1.4.</li>
+</ul>
+</li>
+<li>
+<p><strong>Required options</strong></p>
+<ul>
+<li><code>--to &lt;PREFIX&gt;</code>: An anchor prefix to map from (e.g, <code>MESH</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Optional arguments</strong></p>
+<ul>
+<li><code>--from &lt;PREFIX&gt;</code>: An anchor prefix to map from (e.g., <code>UBERON</code>). Must contain term entries in the file. Defaults to the most frequent prefix in the file.</li>
+<li><code>--separator &lt;SEP&gt;</code>: Delimiter of the output table. Defaults to <code>\t</code>.</li>
 </ul>
 </li>
 </ul>
-<pre><code class="language-bash">ontoparse xref &lt;FILE&gt; --from &lt;PREFIX&gt; --to &lt;PREFIX&gt;
-</code></pre>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <p>From the primary prefix (i.e., UBERON):</p>
 <pre><code class="language-bash">ontoparse xref uberon.obo --to MESH
