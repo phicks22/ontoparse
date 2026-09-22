@@ -1,6 +1,12 @@
-[package]
-name = "ontoparse"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = [
+    "crates/ontoparse-core",
+    "crates/ontoparse-load",
+    "crates/ontoparse-cli",
+]
+resolver = "3"
 
-[dependencies]
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
