@@ -7,6 +7,8 @@ src = "src"
 [output.html]
 git-repository-url = "https://github.com/phicks22/ontoparse"
 search.use-boolean-and = true
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
 
 [preprocessor.toc]
 command = "mdbook-toc"
