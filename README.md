@@ -1,3 +1,10 @@
 # ontoparse
 
-Ontology utilities so my lab stops asking me for ID mappings.
+Utils for working with ontology files.
+
+## Documentation
+
+Documentation is available at [https://phicks-it.codeberg.page/ontoparse/](https://phicks-it.codeberg.page/ontoparse/).
+
+- [Introduction](https://phicks-it.codeberg.page/ontoparse/](https://phicks-it.codeberg.page/ontoparse/introduction.html)
+- [CLI](https://phicks-it.codeberg.page/ontoparse/](https://phicks-it.codeberg.page/ontoparse/cli.html)
