@@ -4,14 +4,21 @@
 
 Extract cross-references (xrefs) from ontologies.
 
-- Arguments
-  - `to`: An anchor prefix to map from (e.g, `MESH`).
-  - `from`: An anchor prefix to map from (e.g., `UBERON`). Must contain term entries in the file. Defaults to the most frequent prefix in the file.
-  - `separator`: Delimiter of the output table. Default is `\t`.
-
 ```bash
-ontoparse xref <FILE> --from <PREFIX> --to <PREFIX>
+ontoparse xref <FILE> --to <PREFIX> [--from <PREFIX>] [--separator <SEP>]
 ```
+
+- **Arguments**
+
+  - `<FILE>`: An ontology OBO file in release format >1.2 or <1.4.
+
+- **Required options**
+
+  - `--to <PREFIX>`: An anchor prefix to map from (e.g, `MESH`).
+
+- **Optional arguments**
+  - `--from <PREFIX>`: An anchor prefix to map from (e.g., `UBERON`). Must contain term entries in the file. Defaults to the most frequent prefix in the file.
+  - `--separator <SEP>`: Delimiter of the output table. Defaults to `\t`.
 
 ### Example
 
